@@ -1,0 +1,90 @@
+body {
+    
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.digital-info{
+    display: flex;
+    justify-content: space-around;
+}
+.top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgba(255, 165, 0, 0.5);
+    
+    padding: 10px 20px;
+}
+
+.top-text .links a[href="#"] {
+    /* ваши стили */
+    color: rgb(76, 0, 255); /* измените цвет текста на красный */
+    font-weight: bold; /* сделайте текст жирным */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.image-text{
+    
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.links a {
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.links a:hover {
+    color: #ff4500;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navigation,
+.image,
+.digital-info {
+    display: flex;
+}
+
+.navigation {
+    justify-content: center;
+}
+
+.image-text {
+    padding-left: 30px;
+}
+
+.highlight,
+.highlight-number {
+    color: orange;
+}
+
+.highlight-number {
+    text-align: center;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+

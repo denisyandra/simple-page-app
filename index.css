@@ -1,0 +1,154 @@
+body {
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* градиентный фон */
+    padding: 10px 20px;
+    
+}
+
+
+.top-text .links a[href="#"] {
+    /* ваши стили */
+    color: rgb(76, 0, 255); /* измените цвет текста на красный */
+    font-weight: bold; /* сделайте текст жирным */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.links a {
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ff4500;
+}
+
+.top-text .links a[href="#"] {
+    color: rgb(76, 0, 255); /* измените цвет текста */
+    font-weight: bold; /* сделайте текст жирным */
+}
+
+.image,
+.navigation,
+.digital-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-text {
+    padding-left: 30px;
+}
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.centered-table caption {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.centered-table th,
+.centered-table td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.centered-table th {
+    padding-left: 20px;
+}
+
+.job-list {
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.job {
+    text-align: center;
+}
+
+
+.highlight {
+    color: orange;
+    font-family:cursive;
+    font-size: 63px;
+}
+
+
+.requirements {
+    font-size: 25px;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+
+.centered-table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 60%;
+    font-family: cursive;
+    background-color: #f9f9f9; /* светлая заливка для таблицы */
+}
+
+.centered-table caption {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #333;
+    color: white; /* белый текст для заголовка */
+    padding: 10px;
+}
+
+.centered-table th,
+.centered-table td {
+    border: 2px solid #ddd; /* серые рамки */
+    padding: 15px; /* отступы */
+    text-align: left;
+}
+
+.centered-table th {
+    background-color: #ddb70b; /* зелёная заливка для заголовков */
+    color: white; /* белый текст для заголовков */
+}

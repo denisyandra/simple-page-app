@@ -1,0 +1,82 @@
+body {
+    font-size: 22px;
+}
+
+.top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgba(255, 165, 0, 0.5);
+    padding: 10px 20px;
+}
+
+.top-text .links a[href="#"] {
+    color: rgb(76, 0, 255); /* измените цвет текста */
+    font-weight: bold; /* сделайте текст жирным */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.links a {
+    margin-left: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.image,
+.navigation,
+.digital-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-list {
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.job {
+    text-align: center;
+}
+
+.experience {
+    color: orange;
+}
+
+.requirements {
+    font-size: 25px;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+.highlight,
+.highlight-number {
+    color: orange;
+}
+
+.highlight-number {
+    text-align: center;
+}
