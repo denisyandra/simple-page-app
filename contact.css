@@ -1,5 +1,15 @@
+:root {
+    --primary-color: rgb(76, 0, 255);
+    --secondary-color: #000;
+    --highlight-color: orange;
+    --background-color: rgba(255, 165, 0, 0.5);
+    --hover-color: #ff4500;
+}
+
 body {
-    font-size: 22px;
+    font-size: 35px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
 .top-text {
@@ -7,17 +17,23 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    background-color: rgba(255, 165, 0, 0.5);
+    background-color: var(--background-color);
     padding: 10px 20px;
 }
 
 .top-text .links a[href="#"] {
-    color: rgb(76, 0, 255); /* измените цвет текста */
-    font-weight: bold; /* сделайте текст жирным */
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: var(--hover-color);
 }
 
 .logo {
     margin-right: 20px;
+    width: 70px; /* фиксированная ширина */
+    height: 70px; /* фиксированная высота */
 }
 
 header h1 {
@@ -33,7 +49,7 @@ header h1 {
 
 .links a {
     margin-left: 15px;
-    color: #000;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 30px;
     padding-left: 30px;
@@ -57,26 +73,17 @@ header h1 {
 }
 
 .experience {
-    color: orange;
+    color: var(--highlight-color);
 }
 
-.requirements {
-    font-size: 25px;
-}
 
-.services ul {
-    list-style-type: none;
-}
-
-.services li {
-    margin-bottom: 10px;
-}
 
 .highlight,
 .highlight-number {
-    color: orange;
+    color: var(--highlight-color);
 }
 
 .highlight-number {
     text-align: center;
 }
+

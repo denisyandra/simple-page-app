@@ -1,5 +1,20 @@
+:root {
+    --primary-color: rgb(76, 0, 255);
+    --secondary-color: #333;
+    --highlight-color: orange;
+    --gradient-start: #ff7e5f;
+    --gradient-end: #feb47b;
+    --hover-color: #ff4500;
+    --table-bg-color: #f9f9f9;
+    --caption-bg-color: #333;
+    --caption-text-color: white;
+    --table-border-color: #ddd;
+    --th-bg-color: #ddb70b;
+    --th-text-color: white;
+}
+
 body {
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
@@ -9,20 +24,19 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* градиентный фон */
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end)); /* градиентный фон */
     padding: 10px 20px;
-    
 }
 
-
 .top-text .links a[href="#"] {
-    /* ваши стили */
-    color: rgb(76, 0, 255); /* измените цвет текста на красный */
-    font-weight: bold; /* сделайте текст жирным */
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .logo {
     margin-right: 20px;
+    width: 70px; /* фиксированная ширина */
+    height: 70px; /* фиксированная высота */
 }
 
 header h1 {
@@ -30,7 +44,7 @@ header h1 {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: #333;
+    color: var(--secondary-color);
 }
 
 .links {
@@ -41,20 +55,14 @@ header h1 {
 
 .links a {
     margin-left: 15px;
-    color: #000;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 30px;
     padding-left: 30px;
-    transition: color 0.3s;
 }
 
 .links a:hover {
-    color: #ff4500;
-}
-
-.top-text .links a[href="#"] {
-    color: rgb(76, 0, 255); /* измените цвет текста */
-    font-weight: bold; /* сделайте текст жирным */
+    color: var(--hover-color);
 }
 
 .image,
@@ -73,6 +81,9 @@ header h1 {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
+    width: 60%;
+    font-family: cursive;
+    background-color: var(--table-bg-color); /* светлая заливка для таблицы */
 }
 
 .centered-table caption {
@@ -80,16 +91,21 @@ header h1 {
     padding-top: 20px;
     font-size: 30px;
     font-weight: bold;
+    background-color: var(--caption-bg-color);
+    color: var(--caption-text-color); /* белый текст для заголовка */
+    padding: 10px;
 }
 
 .centered-table th,
 .centered-table td {
-    border: 2px solid black;
-    padding: 10px;
+    border: 2px solid var(--table-border-color); /* серые рамки */
+    padding: 15px; /* отступы */
+    text-align: left;
 }
 
 .centered-table th {
-    padding-left: 20px;
+    background-color: var(--th-bg-color); /* зелёная заливка для заголовков */
+    color: var(--th-text-color); /* белый текст для заголовков */
 }
 
 .job-list {
@@ -101,54 +117,12 @@ header h1 {
     text-align: center;
 }
 
-
 .highlight {
-    color: orange;
-    font-family:cursive;
+    color: var(--highlight-color);
+    font-family: cursive;
     font-size: 63px;
 }
 
-
 .requirements {
     font-size: 25px;
-}
-
-.services ul {
-    list-style-type: none;
-}
-
-.services li {
-    margin-bottom: 10px;
-}
-
-
-.centered-table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    width: 60%;
-    font-family: cursive;
-    background-color: #f9f9f9; /* светлая заливка для таблицы */
-}
-
-.centered-table caption {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #333;
-    color: white; /* белый текст для заголовка */
-    padding: 10px;
-}
-
-.centered-table th,
-.centered-table td {
-    border: 2px solid #ddd; /* серые рамки */
-    padding: 15px; /* отступы */
-    text-align: left;
-}
-
-.centered-table th {
-    background-color: #ddb70b; /* зелёная заливка для заголовков */
-    color: white; /* белый текст для заголовков */
 }

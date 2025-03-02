@@ -1,36 +1,42 @@
+:root {
+    --primary-color: #ff9900;
+    --secondary-color: #4c00ff;
+    --highlight-color: orange;
+    --text-color: #000;
+    --hover-color: #ff4500;
+    --background-color: rgba(255, 165, 0, 0.5);
+    --link-hover-color: red;
+}
+
 body {
-    
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
-.digital-info{
+.digital-info {
     display: flex;
     justify-content: space-around;
 }
+
 .top-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    background-color: rgba(255, 165, 0, 0.5);
-    
+    background-color: var(--background-color);
     padding: 10px 20px;
 }
 
 .top-text .links a[href="#"] {
-    /* ваши стили */
-    color: rgb(76, 0, 255); /* измените цвет текста на красный */
-    font-weight: bold; /* сделайте текст жирным */
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .logo {
     margin-right: 20px;
-}
-
-.image-text{
-    
+    width: 70px;
+    height: 70px;
 }
 
 .links {
@@ -41,14 +47,14 @@ body {
 
 .links a {
     margin-left: 15px;
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 30px;
     padding-left: 30px;
 }
 
 .links a:hover {
-    color: #ff4500;
+    color: var(--hover-color);
 }
 
 header h1 {
@@ -62,6 +68,10 @@ header h1 {
     display: flex;
 }
 
+.digital-info {
+    font-size: 30px;
+}
+
 .navigation {
     justify-content: center;
 }
@@ -72,19 +82,93 @@ header h1 {
 
 .highlight,
 .highlight-number {
-    color: orange;
+    color: var(--highlight-color);
 }
 
 .highlight-number {
     text-align: center;
 }
 
-.services ul {
+.services a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.bt-form {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.bt-form:hover {
+    background-color: var(--hover-color);
+}
+
+.services a:hover {
+    color: var(--link-hover-color);
+}
+
+.main-list {
     list-style-type: none;
+    padding: 0;
 }
 
-.services li {
+.main-list li {
+    background-color: var(--background-color);
     margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    padding-left: 30px;
 }
 
+.main-list li::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url('icon-list.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+form {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+form input,
+form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
 
