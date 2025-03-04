@@ -11,6 +11,7 @@
     --table-border-color: #ddd;
     --th-bg-color: #ddb70b;
     --th-text-color: white;
+    --background-color: rgba(255, 165, 0, 0.5);
 }
 
 body {
@@ -126,3 +127,134 @@ header h1 {
 .requirements {
     font-size: 25px;
 }
+
+
+footer {
+    margin-top: 640px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+    
+}
+
+@media (max-width: 1550px) {
+    .image{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img{
+        height: 250px;
+        width: 550px;
+        
+        
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .highlight-t{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+        
+    }
+
+    
+    .highlight{
+        font-size:30px;
+    }
+
+
+    .highlight-text{
+        color:#000;
+        font-size: 20px;
+        padding-left: 50px;
+        
+    }
+
+    .image{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img{
+        height: 250px;
+        width: 550px;
+        
+        
+    }
+
+    .digital-hd{
+        margin-left: 30px;
+    }
+
+    .top-text {
+        
+        align-items: flex-start;
+    }
+
+    
+
+    .links {
+        flex-direction:column;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+
+    .links a {
+        font-size: 25px;
+        margin-left: 0;
+        padding-left: 18px;
+        
+    }
+
+    
+
+
+    .services {
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+
+    .services a {
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+   
+
+    body {
+        font-size: 20px;
+    }
+
+    
+    footer{
+        padding-top: 30px;
+        display:flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .image img{
+        height: 200px;
+        width: 300px;
+        
+        
+    }
+}
+
