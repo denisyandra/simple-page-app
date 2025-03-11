@@ -198,6 +198,77 @@ form textarea:focus {
     outline: none;
 }
 
+/*--------------------------------- */
+.links a, .bt-form {
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes textAppearance {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-text h2, .image-text p {
+    animation: textAppearance 0.8s ease-in-out;
+}
+
+
+.image img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    animation: logoSpin 5s linear infinite;
+}
+
+
+.bt-form:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes loadingIcon {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+.services a {
+    transition: all 0.3s ease-in-out;
+}
+
+/*--------------------------------- */
+
 @media (max-width: 2260px) {
 
     .digital-info {

@@ -41,8 +41,8 @@ main{
 
 .logo {
     margin-right: 20px;
-    width: 70px; /* фиксированная ширина */
-    height: 70px; /* фиксированная высота */
+    width: 70px; 
+    height: 70px; 
 }
 
 header h1 {
@@ -137,6 +137,74 @@ footer {
     background-color: var(--background-color);
     
 }
+
+
+/*--------------------------------- */
+.links a, .bt-form {
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes textAppearance {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.requirements h1, .job-list h2, .image-text h2, .image-text p {
+    animation: textAppearance 0.8s ease-in-out;
+}
+
+
+
+
+.requirements a{
+    transition: all 0.3s ease-in-out;
+}
+
+
+.logo {
+    animation: logoSpin 5s linear infinite;
+}
+
+
+
+
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+@keyframes loadingIcon {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+/*--------------------------------- */
+
 
 
 @media (max-width: 1895px){
