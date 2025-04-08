@@ -67,3 +67,17 @@ contentParagraph.addEventListener('click', () => {
 });
 
 
+
+
+/*
+document.addEventListener("DOMContentLoaded", () => {
+    const resetBtn = document.getElementById("resetBtn");
+
+    resetBtn.addEventListener("click", (event) => {
+        const isConfirmed = confirm("Вы уверены, что хотите сбросить форму?");
+        if (!isConfirmed) {
+            event.preventDefault(); // Отмена действия сброса
+        }
+    });
+});
+*/
