@@ -179,6 +179,7 @@ form label {
 
 form input,
 form textarea {
+    
     width: 800px;
     padding: 10px;
     margin-top: 5px;
@@ -186,6 +187,7 @@ form textarea {
     border-radius: 5px;
     font-size: 25px;
     box-sizing: border-box;
+    
 }
 form textarea{
     height: 200px;
@@ -197,6 +199,112 @@ form textarea:focus {
     border-color: var(--secondary-color);
     outline: none;
 }
+
+
+
+/* Стилизуем текст ошибок */
+/* Стили для сообщения об ошибке */
+.error {
+    
+    color: red; /* Красный цвет текста, чтобы ошибки выделялись */
+    font-size: 0.875em; /* Немного уменьшенный шрифт для ошибок */
+    font-style: italic; /* Курсивный текст для акцента */
+    margin-top: 5px; /* Расстояние между вводом и сообщением об ошибке */
+    display: block; /* Каждое сообщение на новой строке */
+    height: 1.5em;
+}
+
+
+/* Стили для кнопок */
+.bt-form {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bt-form:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}
+
+
+
+/*--------------------------------- */
+
+.bt-form {
+    display: inline-block;
+    background-color: var(--primary-color, #3498db);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.bt-form:hover {
+    background-color: var(--hover-color, #2980b9);
+}
+
+/*--------------------------------- */
+.links a, .bt-form {
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes textAppearance {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-text h2, .image-text p {
+    animation: textAppearance 0.8s ease-in-out;
+}
+
+
+.image img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    animation: logoSpin 5s linear infinite;
+}
+
+
+.bt-form:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.services a {
+    transition: all 0.3s ease-in-out;
+}
+
+/*--------------------------------- */
 
 @media (max-width: 2260px) {
 

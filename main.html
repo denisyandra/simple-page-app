@@ -74,18 +74,26 @@
                 </li>
             </ul>
         </section>
+        
         <section>
             <h2 class="digital-hd">Комментарии</h2>
-            <form>
-                <fieldset>
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Электронная почта:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="comment">Комментарий:</label>
-                    <textarea id="comment" name="comment"></textarea>
-                </fieldset> 
-                <button class="bt-form" type="submit">Отправить</button>
+            <form id="feedbackForm">
+              <fieldset>
+                <label for="name">Имя:</label>
+                <input type="text" minlength="2" maxlength="20" required id="name" name="name">
+                <span class="error" id="nameError"></span>
+            
+                <label for="email">Электронная почта:</label>
+                <input type="email" maxlength="20" required id="email" name="email">
+                <span class="error" id="emailError"></span>
+
+                <label for="comment">Комментарий:</label>
+                <textarea type = "text" id="comment" required name="comment"></textarea>
+                <span class="error" id="commentError"></span>
+
+              </fieldset>
+              <button class="bt-form" type="submit">Отправить</button>
+              <button type="reset" id="resetBtn" class="bt-form">Сбросить</button>
             </form>
         </section>
         
@@ -106,5 +114,9 @@
         <p>&copy; 2025 Программирование. Все права защищены.</p>
         
     </footer>
+    
+
+    <script src="main.js"></script>
+
 </body>
 </html>

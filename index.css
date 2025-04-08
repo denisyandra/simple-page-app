@@ -36,8 +36,8 @@ body {
 
 .logo {
     margin-right: 20px;
-    width: 70px; /* фиксированная ширина */
-    height: 70px; /* фиксированная высота */
+    width: 70px; 
+    height: 70px; 
 }
 
 header h1 {
@@ -84,7 +84,7 @@ header h1 {
     border-collapse: collapse;
     width: 60%;
     font-family: cursive;
-    background-color: var(--table-bg-color); /* светлая заливка для таблицы */
+    background-color: var(--table-bg-color); 
 }
 
 .centered-table caption {
@@ -93,20 +93,20 @@ header h1 {
     font-size: 30px;
     font-weight: bold;
     background-color: var(--caption-bg-color);
-    color: var(--caption-text-color); /* белый текст для заголовка */
+    color: var(--caption-text-color); 
     padding: 10px;
 }
 
 .centered-table th,
 .centered-table td {
-    border: 2px solid var(--table-border-color); /* серые рамки */
-    padding: 15px; /* отступы */
+    border: 2px solid var(--table-border-color); 
+    padding: 15px;
     text-align: left;
 }
 
 .centered-table th {
-    background-color: var(--th-bg-color); /* зелёная заливка для заголовков */
-    color: var(--th-text-color); /* белый текст для заголовков */
+    background-color: var(--th-bg-color); 
+    color: var(--th-text-color); 
 }
 
 .job-list {
@@ -137,6 +137,168 @@ footer {
     background-color: var(--background-color);
     
 }
+
+
+
+
+
+
+.links a, .bt-form {
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes textAppearance {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-text h2, .image-text p {
+    animation: textAppearance 0.8s ease-in-out;
+}
+
+
+.image img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.bt-form:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.logo {
+    animation: logoSpin 5s linear infinite;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.gallery img {
+    border: 3px solid var(--secondary-color);
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.controls button:hover {
+    background-color: var(--hover-color);
+}
+
+
+button#openModal {
+    margin-left: 1070px;
+    padding: 15px 25px;
+    font-size: 25px;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+}
+
+button#openModal:hover {
+    transform: scale(1.1);
+    background: var(--hover-color);
+}
+
+
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--modal-bg-color);
+    padding: 30px;
+    color: var(--modal-text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: var(--modal-text-color);
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#modal button:hover {
+    background-color: var(--hover-color);
+}
+
+
+.gallery img, #modal {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 @media (max-width: 1550px) {
     .image{
